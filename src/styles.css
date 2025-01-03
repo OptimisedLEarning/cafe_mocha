@@ -44,6 +44,9 @@ body {
   font-family: sans-serif;
   text-align: center;
 
+
+  font-size: clamp(14px, 1.5vw, 20px); /* Dynamically adjusts base font size */
+  line-height: 1.5; /* Improves readability */
  
   
   
@@ -80,6 +83,17 @@ header {
   text-align: center; 
 }
 
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem); /* Scales proportionally with screen size */
+  font-weight: bold; /* Makes it visually distinct */
+  margin-bottom: 1em; /* Adds spacing below the heading */
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem); /* Smaller than h1 but larger than body text */
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
 
 nav{
   display: flex;
@@ -100,7 +114,7 @@ nav a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 27px;
   
 }
 
@@ -137,11 +151,7 @@ div
 }
 
 
-#intro p, #timings ul, #location p {
-  font-size: clamp(1rem, 2vw, 2.5rem); /* Limits text size growth */
-  line-height: 1.5; /* Adds spacing between lines */
-  margin: 0;
-}
+
 
 
 
@@ -150,4 +160,6 @@ div
   margin: 0; /* Removes default margin */
   padding: 0; /* Removes default padding */
 }
+
+
 
